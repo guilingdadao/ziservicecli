@@ -9,7 +9,7 @@ public class TestRestTemplate {
 	public static void main(String[] args) {
 
 		RestTemplate rest = new RestTemplate();
-		String url = "http://localhost:8080/ziservice/user/test1/{id}";
+		String url = "http://localhost:8080/ziservice/hello/{id}";
 		int id = 1;
 		User user = rest.getForObject(url, User.class, id);
 		
